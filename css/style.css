@@ -1,10 +1,30 @@
-.back_to_top{position: fixed;bottom: 10px;right: 10px;width: 35px;height: 35px;border-radius: 5px;background-color: #347ad8;box-shadow: 0px 0px 2px 0px grey;z-index: 999;		}
+.back_to_top{position: fixed;bottom: 10px;right: 10px;width: 35px;height: 35px;border-radius: 5px;background-color: #3998ff;box-shadow: 0px 0px 2px 0px #ffffff;z-index: 999;		}
 .back_to_top i{color:#fff;font-size: 32px;padding: 0px 7px;}	
+html{
+	scroll-behavior: smooth	;
+}
 header{
 	background-color: #3998ff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1050;
+	box-shadow: 0 0 2px grey;
 }
 .header-logo, .footer-logo .logo{
 	width: 150px;
+}
+header .nav-item{
+	min-width: 120px;
+	border-radius: 7px;
+	font-size: 18px;
+	text-align: center;
+}
+header .nav-item:hover{
+	background-color: #ffffff2e;
+}
+header .nav-item .nav-link:hover{
+	color: #fff !important;
 }
 .footer-logo{
 	text-align: center;
@@ -42,6 +62,7 @@ footer ul li a:hover {
 }
 .carousel-main{
 	height: 500px;
+	margin-top: 79px;
 }
 .carousel-item img{
 	width: 100%;
@@ -128,7 +149,18 @@ section{
 	overflow: hidden;
 	font-size: 16px;
 }
-.support{
+.contact {
+	position: relative;
+	background-color: #f9f9f9;
+}
+/* .contact:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/contact-bg.jpg");
+} */
+.support, .contact-form{
 	padding-top: 15px;
 }
 .support ul{
@@ -139,6 +171,7 @@ section{
 	padding-left: 30px;
 	position: relative;
 	max-width: 300px;
+	margin-bottom: 16px;
 }
 .support ul li a span{
 	position: absolute;
@@ -148,7 +181,7 @@ section{
 	text-align: center;
 }
 .support ul li a{
-	font-size: 18px;
+	font-size: 17px;
 	color: #000000;
 
 }
@@ -164,6 +197,16 @@ section{
 .form-outer label{
 	font-size: 14px;
 	line-height: 1;
+}
+.form-group{
+	position: relative;
+}
+.form-group .error{
+	font-size: 12px;
+	color: Red;
+	position: absolute;
+	bottom: -18px;
+	margin-bottom: 0;
 }
 textarea{
 	resize: none;
