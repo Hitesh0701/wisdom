@@ -1,0 +1,170 @@
+.back_to_top{position: fixed;bottom: 10px;right: 10px;width: 35px;height: 35px;border-radius: 5px;background-color: #347ad8;box-shadow: 0px 0px 2px 0px grey;z-index: 999;		}
+.back_to_top i{color:#fff;font-size: 32px;padding: 0px 7px;}	
+header{
+	background-color: #3998ff;
+}
+.header-logo, .footer-logo .logo{
+	width: 150px;
+}
+.footer-logo{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff59;
+}
+footer{
+	background-color: #3998ff;
+	padding-top: 15px;
+}
+footer ul{
+	padding-left: 0;
+    display: flex;
+    padding: 15px 0;
+    list-style-type: none;
+	font-size: 20px;
+	justify-content: space-around;
+	margin-bottom: 0px;
+}
+footer ul li{
+	padding: 10px 15px;
+
+}
+footer ul li a{
+	color: #ffffff;
+	opacity: 0.85;
+	display: block;
+}
+footer ul li a:hover {
+	text-decoration: none;
+	opacity: 1;
+	color: #ffffff;
+
+}
+.carousel-main{
+	height: 500px;
+}
+.carousel-item img{
+	width: 100%;
+}
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.section-head h3{
+	text-align: center;
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	color: #2461a5;
+}
+.why-smart-invest{
+	background-color: whitesmoke;
+}
+.invest-card, .why-choose-card{
+	box-shadow: 0 0 5px #d2cbcb;
+	border-radius: 8px;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 25px 0 0;
+	transition: 0.25s ease all;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.invest-card:hover{
+	box-shadow: 0 0 5px #b3aaaa;
+	background-color: #2461a5;
+	color: #ffffff;
+}
+.invest-card:hover .invest-body p{
+	color: #fff;
+}
+
+.invest-card img{
+	max-width: 200px;
+	margin-bottom: 15px;
+}
+.invest-card .invest-body{
+	border-top: 1px solid gainsboro;
+	padding: 20px 15px 25px;
+}
+.invest-body h5, .choose-body h5{
+	font-size: 22px;
+	font-weight: 700;
+}
+.invest-body p{
+	font-size: 15px;
+	color: grey;
+	margin-bottom: 0;
+	max-height: 115px;
+	height: 115px;
+	overflow: hidden;
+}
+.why-choose-card:hover{
+	box-shadow: 0 0 5px #2461a5d4;
+}
+.choose-body {
+	padding: 0 15px 35px;
+	position: relative;
+}
+.choose-body img{
+	width: 125px;
+	height: 125px;
+	margin-bottom: 15px;
+}
+.choose-body .read-more{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	color: #000000;
+	font-weight: 600;
+}
+.choose-body .read-more:hover{
+	color: #2461a5;
+}
+.choose-body p{
+	margin-top: 15px;
+	height: 100px;
+	overflow: hidden;
+	font-size: 16px;
+}
+.support{
+	padding-top: 15px;
+}
+.support ul{
+	padding-left: 0;
+	list-style-type: none;
+}
+.support ul li{
+	padding-left: 30px;
+	position: relative;
+	max-width: 300px;
+}
+.support ul li a span{
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+}
+.support ul li a{
+	font-size: 18px;
+	color: #000000;
+
+}
+.support ul li a:hover{
+	text-decoration: none;
+	color: #2461a5;
+}
+.support h5, .contact-form{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+/* form css */
+.form-outer label{
+	font-size: 14px;
+	line-height: 1;
+}
+textarea{
+	resize: none;
+}
