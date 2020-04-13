@@ -1,7 +1,10 @@
-.back_to_top{position: fixed;bottom: 10px;right: 10px;width: 35px;height: 35px;border-radius: 5px;background-color: #3998ff;box-shadow: 0px 0px 2px 0px #ffffff;z-index: 999;		}
+.back_to_top{position: fixed;bottom: 20px;right: 10px;width: 35px;height: 35px;border-radius: 5px;background-color: #3998ff;box-shadow: 0px 0px 2px 0px #ffffff;z-index: 999;		}
 .back_to_top i{color:#fff;font-size: 32px;padding: 0px 7px;}	
 html{
 	scroll-behavior: smooth	;
+}
+body{
+	font-family: inherit !important;
 }
 header{
 	background-color: #3998ff;
@@ -25,6 +28,29 @@ header .nav-item:hover{
 }
 header .nav-item .nav-link:hover{
 	color: #fff !important;
+}
+.name-header{
+	position: relative;
+	margin-top: 79px;
+	width: 100%;
+	background-image: url("../images/contact-bg.jpg");
+	background-size: cover;
+	padding: 60px 20px;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #0000003d;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.name-header h1{
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 50px;
 }
 .footer-logo{
 	text-align: center;
@@ -66,6 +92,7 @@ footer ul li a:hover {
 }
 .carousel-item img{
 	width: 100%;
+	height: 500px;
 }
 section{
 	padding-top: 50px;
@@ -170,7 +197,7 @@ section{
 .support ul li{
 	padding-left: 30px;
 	position: relative;
-	max-width: 300px;
+	max-width: 425px;
 	margin-bottom: 16px;
 }
 .support ul li a span{
@@ -193,6 +220,11 @@ section{
 	font-size: 24px;
 	margin-bottom: 20px;
 }
+.contact-image{
+	max-width: 100%;
+	max-height: 200px;
+	margin-bottom: 25px;
+}
 /* form css */
 .form-outer label{
 	font-size: 14px;
@@ -210,4 +242,161 @@ section{
 }
 textarea{
 	resize: none;
+}
+.btn-primary{
+	background-color: #2461a5 !important;
+}
+.btn-primary:hover{
+	box-shadow: 0 0 3px grey;
+}
+/* Modals */
+.advisor-modal .modal-header{
+	display: block;
+	background-color: #2461a5;
+	color: #ffffff;
+	border-radius: .3rem .3rem 0 0;
+}
+/* Site Contents */
+.about-content ul{
+	padding-left: 0;
+}
+.about-content p{
+	font-size: 18px;
+	/* color: red; */
+	margin-bottom: 20px;
+}
+.our-team{
+	background-color: whitesmoke;
+}
+.team-image img{
+	max-width: 100%;
+	width: 100%;
+	max-height: 300px;
+	/* float: right; */
+}
+.team-content p{
+	font-size: 18px;
+}
+.service-content-outer{
+	margin-bottom: 35px;
+}
+.service-content-outer h4{
+	font-size: 28px;
+	color: #2461a5;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.service-content-outer p{
+	font-size: 17px
+}
+.benefit-card{
+	width: 100%;
+	height: 260px;
+	border-radius: 8px;
+	padding: 20px 0;
+	text-align: center;
+	box-shadow: 0 0 5px #d2cbcb;
+	transition: 0.25s ease all;
+	margin-bottom: 30px;
+}
+.benefit-card:hover, .pricing-cards:hover{
+	box-shadow: 0 0 5px #b3aaaa;
+}
+.benefit-card img{
+	width: 80px;
+	height: 80px;
+	margin-bottom: 15px;
+}
+.benefit-card .benefit-card-body{
+	padding: 20px 15px;
+	margin-top: 15px;
+	border-top: 1px solid #e8e4e4;
+}
+.benefit-card h5{
+	font-size: 20px;
+	font-weight: 700;	
+}
+.benefit-card p{
+	font-size: 16px;
+}
+.pricing-cards{
+	border-radius: 4px;
+	box-shadow: 0 0 5px #d2cbcb;
+	transition: 0.25s ease all;
+	margin-bottom: 25px;
+}
+.pricing-card-body{
+	padding: 25px 15px;
+}
+.pricing-card-body table{
+	width: 100%;
+}
+.pricing-card-head{
+	background-color: #2461a5;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	border-radius: 4px 4px 0 0;
+}
+.pricing-card-head h5{
+	margin-bottom: 0;
+}
+.pricing-card-body table tr td{
+	font-weight: 600;
+}
+.pricing-card-body table tr td:last-child{
+	text-align: right;
+}
+.tool-cards .benefit-card{
+	height: auto;
+}
+@media (max-width:767px){
+	.name-header h1{
+		font-size: 30px;
+	}
+	.name-header{
+		padding: 35px 15px;
+	}
+	.section-head h3{
+		font-size: 26px;
+		margin-bottom: 22px;
+	}
+	.benefit-card{
+		height: auto;
+	}
+	.carousel-item img, .carousel-main{
+		height: 300px;
+	}
+	footer ul{
+		display: block;
+		padding: 10px 0;
+	}
+	footer ul li{
+		display: inline-block;
+		width: 48%;
+		padding: 7px 10px;
+		font-size: 16px;
+	}
+	.our-Value .col-md-6:first-child{
+		order: 1;
+	}
+	.about-content ul {
+		padding-left: 15px;
+	}
+}
+@media (max-width:575px){
+	.about-content p, .team-content p, .service-content-outer p{
+		font-size: 15px;
+	}
+	.service-content-outer h4{
+		font-size: 22px;
+	}
+	.header-logo, .footer-logo .logo{
+		width: 125px;
+	}
+}
+@media (max-width:420px){
+	.pricing-card-body table tr td{
+		font-weight: unset;
+	}
 }
