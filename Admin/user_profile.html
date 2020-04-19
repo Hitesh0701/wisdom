@@ -100,16 +100,25 @@
                 <div class="section-head">
                     <h3>Account Status</h3>
                 </div>
+                <div class="invest-outer justify-content-end">
+                    <div class="button-outer mb-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#customerpay">Edit Cutomer Pay</button>
+                    </div>
+                </div>
                 <div class="table-main">
                     <table class="status-table" cellpadding="4">
                         <tr>
                             <th>Customer Pay</th>
+                            <th>Profit</th>
                             <th>Net Profit</th>
+                            <th>Loss</th>
                             <th>Net Loss</th>
-                            <th>Total</th>
+                            <th>Balance</th>
                         </tr>
                         <tr>
                             <td>10000</td>
+                            <td>500</td>
+                            <td>0</td>
                             <td>500</td>
                             <td>0</td>
                             <td class="profit">10500</td>
@@ -326,6 +335,58 @@
                             <button type="button" class="btn btn-primary w-50">Add</button>
                         </a>
                     </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>    
+              </div>
+            </div>
+        </div>
+        <div class="modal fade advisor-modal" id="customerpay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Edit Customer Pay</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-outer">
+                    
+                        <div class="form-group">
+                            <label for="cpay">Customer Pay</label>
+                            <input type="text" class="form-control" id="cpay" placeholder="Customer Pay">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="profit">Profit</label>
+                            <input type="text" class="form-control" id="profit" placeholder="Enter Profit">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="nprofit">Net Profit</label>
+                            <input type="text" class="form-control" id="nprofit" placeholder="Enter Net Profit">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="loss">Loss</label>
+                            <input type="text" class="form-control" id="loss" placeholder="Enter Loss">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="nloss">Net Loss</label>
+                            <input type="text" class="form-control" id="nloss" placeholder="Enter Net Loss">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="balance">Balance Amount</label>
+                            <input type="text" class="form-control" id="balance" placeholder="Enter Balance Amount">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="button-outer text-center mt-4">
+                            <a href="user_profile.html#portfolio">
+                                <button type="button" class="btn btn-primary w-50">Save</button>
+                            </a>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
