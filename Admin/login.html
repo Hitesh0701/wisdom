@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+<body class="auth-screen-main">
+    <section class="auth-screen pt-0 pb-0">
+        <!-- <img src="../images/contact-bg.jpg" alt="Wave" class="banner-bg"> -->
+        <div class="container">
+        <div class="row main">
+            <div class="col-12 align-self-center">
+            <div class="auth-card">
+                <div class="row w-100 ml-0 mr-0">
+                <div class="col-md-5 login-left">
+                    <div class="text-center logo-main">
+                    <a href="#" class="logo">
+                        <img src="../images/logo.png" alt="Wisdom">
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-7 align-self-center">
+                    <div class="right">
+                        <form class="form-outer">
+                            <h3>Admin LOGIN</h3>
+							<p>Please enter your username and password to login</p>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                  <!-- <p class="error">Invalid Email ID</p> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Enter Password">
+                                  <!-- <p class="error">Invalid Password</p> -->
+                            </div>
+                            <!-- <a class="forgot-password" href="" data-toggle="modal" data-target="#contactAdvisorModal">Forgot Credentials?</a> -->
+                            <div class="button-outer text-center mt-4">
+                                <a href="home.html">
+                                    <button type="button" class="btn btn-primary w-50">Login</button>
+                                </a>
+                            </div>
+                          </form>   
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>	  
+    <div class="modal fade advisor-modal" id="contactAdvisorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content text-center">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Wisdom Capital</h4>
+            </div>
+            <div class="modal-body">
+              <h5>Please contact to your Adviser</h5>
+              <img src="../images/contact.gif" class="w-25" alt="contact Image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>    
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+<script src="../js/jquery-1.12.1.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

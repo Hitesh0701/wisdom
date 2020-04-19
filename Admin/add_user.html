@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add/Edit User</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="back_to_top"><a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
+        <header class="admin">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" class="header-logo" alt="Wisdom logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manage_user.html">Manage Users</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dashboard-profile-toggle p-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/user.png" alt=" profile image" />
+                            </a>
+                            <div class="dropdown-menu custom-navbar-dropdown dashboard-menu-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="login.html">logout</a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>      
+            </div>
+        </header>
+        <section class="db-cards">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Add/Edit User</h3>
+                </div>
+                <div class="add-user-card card">
+                    <form class="form-outer">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Number</label>
+                            <input type="text" class="form-control" id="number" placeholder="Enter Number">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" placeholder="Enter D. O. B.">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="pan">PAN Number</label>
+                            <input type="text" class="form-control" id="pan" placeholder="Enter PAN Number">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="account">Account Number</label>
+                            <input type="text" class="form-control" id="account" placeholder="Enter Account Number">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="adhar">Aadhar Number</label>
+                            <input type="text" class="form-control" id="adhar" placeholder="Enter Aadhar Number">
+                              <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Enter Password">
+                              <!-- <p class="error">Invalid Password</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="cpass">Confirm Password</label>
+                            <input type="password" class="form-control" id="cpass" placeholder="Enter Confirm Password">
+                              <!-- <p class="error">Invalid Password</p> -->
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="active" checked>
+                            <label class="form-check-label" for="inlineRadio1">Active</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inactive">
+                            <label class="form-check-label" for="inlineRadio2">Inactive</label>
+                          </div>
+                        <div class="button-outer text-center mt-4">
+                            <a href="manage_user.html">
+                                <button type="button" class="btn btn-primary w-50">Submit</button>
+                            </a>
+                        </div>
+                    </form>   
+                </div>   
+            </div>
+        </section>
+        <section></section>
+        <footer class="admin pt-0">    
+            <div class="container-fluid">
+                <ul class="p-0">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage_user.html">
+                            Manage Users
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</html>   

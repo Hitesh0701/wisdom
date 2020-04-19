@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="back_to_top"><a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
+        <header class="admin">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" class="header-logo" alt="Wisdom logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="manage_user.html">Manage Users</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dashboard-profile-toggle p-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/user.png" alt=" profile image" />
+                            </a>
+                            <div class="dropdown-menu custom-navbar-dropdown dashboard-menu-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="login.html">logout</a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>      
+            </div>
+        </header>
+        <section class="db-cards">
+            <div class="container">
+                <div class="card profile-card">
+                    <div class="media">
+                        <i class="fas fa-user-edit"></i>
+                        <div class="media-left">
+                            <img src="../images/user.png" alt="user image">
+                        </div>
+                        <div class="media-body">
+                            <ul>
+                                <li>
+                                    <h5>First Name</h5>
+                                    <p>Aman</p>
+                                </li>
+                                <li>
+                                    <h5>Last Name</h5>
+                                    <p>Karma</p>
+                                </li>
+                                <li>
+                                    <h5>Email</h5>
+                                    <p>AK@gmail.com</p>
+                                </li>
+                                <li>
+                                    <h5>Mobile</h5>
+                                    <p>7777888879</p>
+                                </li>
+                                <li>
+                                    <h5>D. O. B.</h5>
+                                    <p>01/01/2000</p>
+                                </li>
+                                <li>
+                                    <h5>Aadhar Number</h5>
+                                    <p>1234-4567-4567</p>
+                                </li>
+                                <li>
+                                    <h5>PAN Number</h5>
+                                    <p>ABCD124512S</p>
+                                </li>
+                                <li>
+                                    <h5>Account Number</h5>
+                                    <p>12345678945</p>
+                                </li>
+                                <li>
+                                    <h5>Account Status</h5>
+                                    <p>Active</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="add_user.html">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                </div>    
+            </div>
+        </section>
+        <section class="portfolio-main pt-0">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Account Status</h3>
+                </div>
+                <div class="table-main">
+                    <table class="status-table" cellpadding="4">
+                        <tr>
+                            <th>Customer Pay</th>
+                            <th>Net Profit</th>
+                            <th>Net Loss</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>10000</td>
+                            <td>500</td>
+                            <td>0</td>
+                            <td class="profit">10500</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>  
+        </section>
+        <section class="trading-main pt-0">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Stock Trading Detail</h3>
+                </div>
+                <div class="invest-outer justify-content-end">
+                    <div class="button-outer mb-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactAdvisorModal">Add Stock</button>
+                    </div>
+                </div>
+                <div class="table-main">
+                    <table class="status-table trade-table" cellpadding="3">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Stock Name</th>
+                            <th>Buy Price</th>
+                            <th>Buy Quantity</th>
+                            <th>Sell Price</th>
+                            <th>Sell Quantity</th>
+                            <th>Stock Balance</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Reliance</td>
+                            <td>500</td>
+                            <td>20</td>
+                            <td>550</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>
+                                <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#contactAdvisorModal"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tata</td>
+                            <td>500</td>
+                            <td>20</td>
+                            <td>550</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>
+                                <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#contactAdvisorModal"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="invest-outer justify-content-end">
+                    <div class="button-outer mb-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sellStock">Add Stock</button>
+                    </div>
+                </div>
+                <div class="table-main">
+                    <table class="status-table trade-table" cellpadding="3">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Stock Name</th>
+                            <th>Sell Price</th>
+                            <th>Sell Quantity</th>
+                            <th>Buy Price</th>
+                            <th>Buy Quantity</th>
+                            <th>Stock Balance</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Reliance</td>
+                            <td>20</td>
+                            <td>550</td>
+                            <td>10</td>
+                            <td>500</td>
+                            <td>10</td>
+                            <td>
+                                <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#contactAdvisorModal"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tata</td>
+                            <td>20</td>
+                            <td>550</td>
+                            <td>10</td>
+                            <td>500</td>
+                            <td>10</td>
+                            <td>
+                                <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#contactAdvisorModal"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>  
+        </section>
+        <!-- <section></section> -->
+        <footer class="admin pt-0">    
+            <div class="container-fluid">
+                <ul class="p-0">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage_user.html">
+                            Manage Users
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="modal fade advisor-modal" id="contactAdvisorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Add/Edit Stock</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-outer">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sname">Stock Name</label>
+                        <input type="text" class="form-control" id="sname" placeholder="Enter Stock Name">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="bprice">Buy Price</label>
+                        <input type="text" class="form-control" id="bprice" placeholder="Enter Buy Price">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="bqty">Buy Quantity</label>
+                        <input type="text" class="form-control" id="bqty" placeholder="Enter Buy Quantity">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sprice">Sell Price</label>
+                        <input type="text" class="form-control" id="sprice" placeholder="Enter Sell Price">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sqty">Sell Quantity</label>
+                        <input type="text" class="form-control" id="sqty" placeholder="Enter Sell Quantity">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="button-outer text-center mt-4">
+                        <a href="user_profile.html">
+                            <button type="button" class="btn btn-primary w-50">Add</button>
+                        </a>
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>    
+              </div>
+            </div>
+        </div>
+        <div class="modal fade advisor-modal" id="sellStock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Add/Edit Stock</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-outer">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sname">Stock Name</label>
+                        <input type="text" class="form-control" id="sname" placeholder="Enter Stock Name">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sprice">Sell Price</label>
+                        <input type="text" class="form-control" id="sprice" placeholder="Enter Sell Price">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="sqty">Sell Quantity</label>
+                        <input type="text" class="form-control" id="sqty" placeholder="Enter Sell Quantity">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="bprice">Buy Price</label>
+                        <input type="text" class="form-control" id="bprice" placeholder="Enter Buy Price">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="bqty">Buy Quantity</label>
+                        <input type="text" class="form-control" id="bqty" placeholder="Enter Buy Quantity">
+                          <!-- <p class="error">Invalid Email ID</p> -->
+                    </div>
+                    <div class="button-outer text-center mt-4">
+                        <a href="user_profile.html">
+                            <button type="button" class="btn btn-primary w-50">Add</button>
+                        </a>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>    
+              </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</html>       

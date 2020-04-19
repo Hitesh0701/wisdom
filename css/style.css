@@ -5,6 +5,8 @@ html{
 }
 body{
 	font-family: inherit !important;
+	min-height: 100vh;
+	position: relative;
 }
 header{
 	background-color: #3998ff;
@@ -23,8 +25,20 @@ header .nav-item{
 	font-size: 18px;
 	text-align: center;
 }
+header .nav-item img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 3px;
+	border: 1px solid grey;
+	background-color: #ffffff;
+}
 header .nav-item:hover{
 	background-color: #ffffff2e;
+}
+header .nav-item.dropdown:hover{
+	cursor: pointer;
+	background-color: transparent !important;
 }
 header .nav-item .nav-link:hover{
 	color: #fff !important;
@@ -37,6 +51,17 @@ header .nav-item .nav-link:hover{
 	background-size: cover;
 	padding: 60px 20px;
 }
+.home-status{
+	margin-top: 79px;
+}
+.tips-home{
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+.tips-home .btn-primary{
+	width: 175px;
+}
+.tips
 .overlay{
 	position: absolute;
 	left: 0;
@@ -85,6 +110,14 @@ footer ul li a:hover {
 	opacity: 1;
 	color: #ffffff;
 
+}
+header.admin, footer.admin{
+	background-color: #003673;
+}
+footer.admin{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 .carousel-main{
 	height: 500px;
@@ -225,6 +258,40 @@ section{
 	max-height: 200px;
 	margin-bottom: 25px;
 }
+
+/* Payment */
+.payment-accepts{
+	margin-top: 79px;
+}
+.payment-accepts ul{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding-left: 0;
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.payment-accepts ul li{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	padding: 15px;
+	box-shadow: 0 0 5px #b3aaaa;
+}
+.payment-accepts ul li img{
+	max-width: 100%;
+}
+.bank-card{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.bank-card h5{
+	text-align: left !important;
+}
 /* form css */
 .form-outer label{
 	font-size: 14px;
@@ -356,7 +423,7 @@ textarea{
 	/* overflow: hidden; */
 }
 .auth-screen {
-    background-color: #CBCBCB;
+    background-color: #f1f1f1;
 	position: relative;
 }
 img.banner-bg {
@@ -390,9 +457,10 @@ img.banner-bg {
     overflow: hidden;
 }
 .auth-card .login-left{
-    background-image: url("../images/auth-image.png");
+    /* background-image: url("../images/auth-image.png"); */
     display: table;
-    height: 100%;
+	height: 100%;
+	background-color: #e5e6ec;
     }
 .auth-card .login-left .logo-main{
     display: table-cell;
@@ -400,8 +468,14 @@ img.banner-bg {
 }
 
   
-.auth-card .right {
+.auth-card .right {	
     padding: 0 38px 0 48px;
+}
+.auth-card .right p{
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: #cecece;
+
 }
 .auth-card .right .content h1{
     font-size: 30px;
@@ -416,6 +490,205 @@ img.banner-bg {
     font-size: 16px;
     margin-bottom: 22px;
     line-height: 20px;
+}
+
+.iframe-main{
+	height: 500px;
+}
+.iframe-main{
+	margin-top: 29px;
+}
+.why-user-panel{
+	margin-top: 50px;
+}
+.why-user-panel .section-head{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.why-user-card:hover{
+	box-shadow: 0 0 5px #b3aaaa;
+}
+.why-user-card{
+	transition: 0.25s ease all;
+	box-shadow: 0 0 5px #d2cbcb;
+	padding: 20px 15px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+.why-user-card img{
+	max-width: 100px;
+	height: 100px;
+}
+.why-user-card .media .media-body{
+	padding-left: 20px;
+}
+.why-user-card .media .media-body h5{
+	font-size: 24px;
+	color: #2461a5;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.why-user-card .media .media-body p{
+	font-size: 16px;
+	color: grey;
+	margin-bottom: 0px;
+}
+
+.profile-card{
+	transition: 0.25s ease all;
+	box-shadow: 0 0 5px #d2cbcb;
+	padding: 25px 15px;
+	position: relative;
+}
+.profile-card i{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	font-size: 30px;
+	color: #2461a5 !important;
+}
+.profile-card img{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	border: 1px solid grey;
+	padding: 5px;
+}
+.profile-card ul{
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.profile-card ul li{
+	display: inline-block;
+	width: 32%;
+	margin-bottom: 20px;
+}
+.profile-card ul li h5{
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.profile-card ul li p{
+	margin-bottom: 0;
+	font-size: 17px;
+	font-weight: 600;
+}
+.profile-card .media-body{
+	padding-left: 40px;
+}
+.status-table{
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+}
+.status-table tr td, .status-table tr th{
+	border: 1px solid grey;
+}
+.status-table tr td.profit{
+	background-color: green;
+	color: #ffffff;
+}
+.status-table tr td.loss{
+	background-color: red;
+	color: #ffffff;
+}
+.trade-table {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.about-content p{
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.tips-list h2{
+	font-size: 14px;
+	cursor: pointer;
+	padding: 12px 16px;
+	transition: 0.25s ease all;
+}
+.tips-list .card-header{
+	padding: 0;
+}
+.tips-list .card-header h2:hover, .tips-list .card-header h2[aria-expanded="true"]{
+	background-color: #2461a5;
+	color: #ffffff;
+}
+.tips-list .card{
+	margin-bottom: 15px;
+}
+.tips-list .card-body{
+	padding: 12px 16px;
+	font-size: 15px;
+}
+.tips-list .card-header{
+	border-bottom: 0;
+}
+.navbar-nav .dropdown-menu{
+	position: absolute !important;
+}
+.invest-outer {
+	display: flex;
+	justify-content: center;
+}
+.invest-outer .btn-primary{
+	width: 150px;
+	margin: 0 5px;
+}
+.db-card-outer {
+	background-color: #ffffff;
+	padding: 25px 20px;
+	box-shadow: 0 0 5px #d2cbcb;
+	transition: 0.25s ease all;
+	margin-bottom: 25px;
+}
+.db-card-outer:hover{
+	box-shadow: 0 0 5px #b3aaaa;
+}
+.db-card-outer h4{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 600;
+	color: #003673;
+	margin-bottom: 0;
+}
+.db-card-outer h5{
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.db-cards{
+	padding-top: 125px;
+}
+.add-user-card{
+	box-shadow: 0 0 5px #d2cbcb;
+	padding: 40px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+table tr td i{
+	margin: 0 7px;
+}
+.fa{
+	cursor: pointer;
+}
+.fa-eye{
+	color: #003673;
+}
+.fa-pencil{
+	color: green;
+}
+.fa-trash-o{
+	color: red
+}
+table .btn-primary{
+	padding: 5px 20px;
+    font-size: 14px;
+}
+.dropdown-menu{
+	left: unset !important;
+	right: 25px !important;
+	top: 50px !important;
 }
 @media (max-width:767px){
 	.name-header h1{
@@ -450,16 +723,38 @@ img.banner-bg {
 	.about-content ul {
 		padding-left: 15px;
 	}
+	.db-card-outer{
+		padding: 20px 0;
+	}
+	.db-cards{
+		padding-top: 90px;
+		padding-bottom: 0;
+	}
+	.db-cards .section-head{
+		margin-bottom: 25px !important;
+	}
+	.db-cards .section-head h3{
+		margin-bottom: 0px !important;
+	}
 }
 @media (max-width:575px){
 	.about-content p, .team-content p, .service-content-outer p{
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.service-content-outer h4{
 		font-size: 22px;
 	}
 	.header-logo, .footer-logo .logo{
 		width: 125px;
+	}
+	.tips-list h2{
+		font-size: 13px;
+	}
+	.tips-list .card-body{
+		font-size: 11px;
+	}
+	.name-header{
+		margin-top: 70px;
 	}
 }
 @media (max-width:420px){

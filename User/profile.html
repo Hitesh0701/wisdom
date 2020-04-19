@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js" integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="back_to_top"><a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
+        <header>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" class="header-logo" alt="Wisdom logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www1.nseindia.com/live_market/dynaContent/live_market.htm" target="_blank">Live Market</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactAdvisorModal">Trade</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dashboard-profile-toggle p-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/user.png" alt=" profile image" />
+                            </a>
+                            <div class="dropdown-menu custom-navbar-dropdown dashboard-menu-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.html">Profile</a>
+                                <a class="dropdown-item" href="profile.html#portfolio">Portfolio</a>
+                                <a class="dropdown-item" href="login.html">logout</a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>      
+            </div>
+        </header>
+        <section class="name-header">
+            <div class="overlay"></div>
+            <h1>Profile</h1>
+        </section>
+        <section class="user-profile">
+            <div class="container">
+                <div class="card profile-card">
+                    <div class="media">
+                        <i class="fas fa-user-edit"></i>
+                        <div class="media-left">
+                            <img src="../images/user.png" alt="user image">
+                        </div>
+                        <div class="media-body">
+                            <ul>
+                                <li>
+                                    <h5>First Name</h5>
+                                    <p>Aman</p>
+                                </li>
+                                <li>
+                                    <h5>Last Name</h5>
+                                    <p>Karma</p>
+                                </li>
+                                <li>
+                                    <h5>Email</h5>
+                                    <p>AK@gmail.com</p>
+                                </li>
+                                <li>
+                                    <h5>Mobile</h5>
+                                    <p>7777888879</p>
+                                </li>
+                                <li>
+                                    <h5>D. O. B.</h5>
+                                    <p>01/01/2000</p>
+                                </li>
+                                <li>
+                                    <h5>Aadhar Number</h5>
+                                    <p>1234-4567-4567</p>
+                                </li>
+                                <li>
+                                    <h5>PAN Number</h5>
+                                    <p>ABCD124512S</p>
+                                </li>
+                                <li>
+                                    <h5>Account Number</h5>
+                                    <p>12345678945</p>
+                                </li>
+                                <li>
+                                    <h5>Account Status</h5>
+                                    <p>Active</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="portfolio"></div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-main pt-0">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Account Status</h3>
+                </div>
+                <table class="status-table" cellpadding="4">
+                    <tr>
+                        <th>Customer Pay</th>
+                        <th>Net Profit</th>
+                        <th>Net Loss</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>10000</td>
+                        <td>500</td>
+                        <td>0</td>
+                        <td class="profit">10500</td>
+                    </tr>
+                </table>
+            </div>  
+        </section>
+        <section class="invest-withdrawl">
+            <div class="container">
+                <div class="invest-outer">
+                    <div class="button-outer text-center mt-4">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactAdvisorModal">Invest</button>
+                    </div>
+                    <div class="button-outer text-center mt-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#withdrawl">Withdrawl</button>
+                    </div>
+                    <div class="button-outer text-center mt-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactAdvisorModal">MPin</button>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trading-main pt-0">
+            <div class="container">
+                <div class="section-head">
+                    <h3>Stock Trading Detail</h3>
+                </div>
+                <table class="status-table trade-table" cellpadding="3">
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Stock Name</th>
+                        <th>Buy Price</th>
+                        <th>Buy Quantity</th>
+                        <th>Sell Price</th>
+                        <th>Sell Quantity</th>
+                        <th>Stock Balance</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Reliance</td>
+                        <td>500</td>
+                        <td>20</td>
+                        <td>550</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tata</td>
+                        <td>1200</td>
+                        <td>30</td>
+                        <td>1100</td>
+                        <td>15</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+                <table class="status-table trade-table" cellpadding="3">
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Stock Name</th>
+                        <th>Sell Price</th>
+                        <th>Sell Quantity</th>
+                        <th>Buy Price</th>
+                        <th>Buy Quantity</th>
+                        <th>Stock Balance</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Reliance</td>
+                        <td>20</td>
+                        <td>550</td>
+                        <td>10</td>
+                        <td>500</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tata</td>
+                        <td>20</td>
+                        <td>550</td>
+                        <td>10</td>
+                        <td>500</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </div>  
+        </section>
+         <footer>    
+            <div class="container-fluid">
+                <div class="footer-logo">
+                    <a href="index.html" class="d-block">
+                        <img src="../images/logo.png" class="logo" alt="Wisdom logo">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://www1.nseindia.com/live_market/dynaContent/live_market.htm" target="_blank">Live Market</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Trade</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="profile.html#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="modal fade advisor-modal" id="contactAdvisorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content text-center">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Wisdom Capital</h4>
+                </div>
+                <div class="modal-body">
+                  <h5>Please contact to your Adviser</h5>
+                  <img src="../images/contact.gif" class="w-25" alt="contact Image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>    
+              </div>
+            </div>
+        </div>
+        <div class="modal fade advisor-modal" id="withdrawl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Fill Withdrawl Detail</h4>
+                </div>
+                <div class="modal-body">
+                  <h5>OTP will send to your mobile number</h5>
+                    <form class="form-outer">
+                        <div class="form-group">
+                            <label for="rno">Reference Number</label>
+                            <input type="text" class="form-control" id="rno" placeholder="Enter Reference Number">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="pin">MPIN</label>
+                            <input type="text" class="form-control" id="pin" placeholder="Enter MPIN">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="ano">Account Number</label>
+                            <input type="text" class="form-control" id="ano" placeholder="Enter Account Number">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="amt">Amount</label>
+                            <input type="text" class="form-control" id="amt" placeholder="Enter Amount">
+                            <!-- <p class="error">Invalid Email ID</p> -->
+                        </div>
+                        <div class="button-outer text-center mt-4">
+                            <a href="profile.html">
+                                <button type="button" class="btn btn-primary w-50">Submit</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>    
+              </div>
+            </div>
+        </div>
+    </body>
+<script src="../js/jquery-1.12.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</html>
