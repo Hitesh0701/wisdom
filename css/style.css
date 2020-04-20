@@ -119,9 +119,26 @@ footer.admin{
 	bottom: 0;
 	width: 100%;
 }
+.marquee{
+	background-color: #2461a5;
+	color: #ffffff;
+	display: inherit;
+}
+.marquee h4{
+	font-size: 22px;
+	font-weight: 100;
+	margin-bottom: 0;
+	padding: 10px 5px;
+}
+.marquee.marquee-home{
+	margin-top: 79px;
+}
 .carousel-main{
 	height: 500px;
 	margin-top: 79px;
+}
+.carousel-main.carousel-user{
+	margin-top: 0;
 }
 .carousel-item img{
 	width: 100%;
