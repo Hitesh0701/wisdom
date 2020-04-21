@@ -708,6 +708,9 @@ table .btn-primary{
 	top: 50px !important;
 }
 @media (max-width:767px){
+	.marquee h4{
+		font-size: 18px;
+	}
 	.name-header h1{
 		font-size: 30px;
 	}
