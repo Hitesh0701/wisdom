@@ -8,6 +8,9 @@ body{
 	min-height: 100vh;
 	position: relative;
 }
+a:hover{
+	text-decoration: none !important;
+}
 header{
 	background-color: #3998ff;
 	position: fixed;
@@ -277,9 +280,6 @@ section{
 }
 
 /* Payment */
-.payment-accepts{
-	margin-top: 79px;
-}
 .payment-accepts ul{
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -688,6 +688,10 @@ table tr td i{
 }
 .fa{
 	cursor: pointer;
+	opacity: 0.85;
+}
+.fa:hover{
+	opacity: 1;
 }
 .fa-eye{
 	color: #003673;
@@ -704,12 +708,47 @@ table .btn-primary{
 }
 .dropdown-menu{
 	left: unset !important;
-	right: 25px !important;
+	right: 40% !important;
 	top: 50px !important;
 }
 @media (max-width:767px){
+	.auth-card .right{
+		padding: 25px 10px;
+	}
+	.auth-card{
+		display: block;
+		height: auto;
+		padding-bottom: 25px;
+	}
+	.auth-card .login-left{
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.auth-card .login-left .logo-main{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 175px;
+	}
+	.auth-card .login-left .logo-main img{
+		width: 175px;
+	}
+	.table-main{
+		overflow-x: auto;
+	}
+	.table-main table{
+		min-width: 700px;
+	}
+	.trade-table, .status-table{
+		font-size: 14px;
+	}
+	.payment-accepts ul li{
+		width: 150px;
+		height: 150px;
+	}
 	.marquee h4{
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.name-header h1{
 		font-size: 30px;
@@ -744,11 +783,14 @@ table .btn-primary{
 		padding-left: 15px;
 	}
 	.db-card-outer{
-		padding: 20px 0;
+		padding: 20px 10px;
 	}
 	.db-cards{
 		padding-top: 90px;
 		padding-bottom: 0;
+	}
+	.admin-home .db-card-outer{
+		padding: 20px 0px;
 	}
 	.db-cards .section-head{
 		margin-bottom: 25px !important;
@@ -756,8 +798,26 @@ table .btn-primary{
 	.db-cards .section-head h3{
 		margin-bottom: 0px !important;
 	}
+	.profile-card .media{
+		display: block;
+	}
+	.profile-card .media .media-left{
+		/* text-align: center; */
+		margin-bottom: 20px;
+	}
+	.profile-card img{
+		width: 100px;
+		height: 100px;
+	}
+	.profile-card .media .media-body{
+		padding-left: 0;
+	}
 }
 @media (max-width:575px){
+	.profile-card .media .media-body ul li{
+		width: 47%;
+		margin-bottom: 10px;
+	}
 	.about-content p, .team-content p, .service-content-outer p{
 		font-size: 14px;
 	}
@@ -773,12 +833,59 @@ table .btn-primary{
 	.tips-list .card-body{
 		font-size: 11px;
 	}
-	.name-header{
+	.name-header, .carousel-main, .marquee.marquee-home{
 		margin-top: 70px;
+	}
+	.payment-accepts ul li{
+		width: 100px;
+		height: 100px;
+	}
+	.db-card-outer h5{
+		font-size: 16px;
+	}
+	.carousel-item img, .carousel-main{
+		height: 200px;
+	}
+	.tips-home{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.why-user-card .media .media-body p{
+		font-size: 14px;
+	}
+	.invest-outer{
+		margin-top: -25px;
+	}
+	.invest-outer .btn-primary{
+		width: 90px;
 	}
 }
 @media (max-width:420px){
+	.profile-card .media .media-body ul li{
+		width: 100%;
+	}
+	.profile-card .media{
+		text-align: center;
+	}
+	.user-profile .profile-card{
+		height: 300px;
+		overflow-y: auto;
+	}
+	.why-user-card .media{
+		display: block;
+		text-align: center;
+	}
+	.why-user-card .media-body{
+		padding-left: 0;
+	}
 	.pricing-card-body table tr td{
 		font-weight: unset;
+	}
+	.payment-accepts ul li{
+		width: 90px;
+		height: 90px;
+	}
+	.tips-home .btn-primary{
+		margin-top: 15px;
 	}
 }
